@@ -77,12 +77,6 @@ body {
     
   }
 
-  /* define the styling rules for the profile picture */
-  .profile-pic {
-    float: left;
-    width: 200px;
-    margin-right: 200px; /* add some margin to separate the image from the text */
-  }
 
   /* adjust the styling for smaller screens */
   @media only screen and (max-width: 600px) {
