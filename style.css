@@ -1,22 +1,33 @@
-/* Body */
+/* Body styles */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    background-color: #e8f0d7;
+    font-family: 'Open Sans', sans-serif;
   }
   
-  /* Header */
+  /* Header styles */
   header {
-    background-color: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
+    background-image: url('forest-header.jpg');
+    background-size: cover;
+    padding: 2rem;
+    color: white;
+    text-align: center;
+    position: relative;
   }
   
-  header h1 {
+  header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+  }
+  
+  h1 {
     margin: 0;
+    font-size: 3rem;
   }
   
   nav ul {
@@ -24,53 +35,80 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    justify-content: center;
   }
   
   nav li {
-    margin: 0 10px;
+    margin: 0 1rem;
   }
   
   nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   
   nav a:hover {
-    text-decoration: underline;
+    color: #a8cf88;
   }
   
-  /* Main */
+  /* Main styles */
   main {
     max-width: 800px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 2rem;
   }
   
-  section {
-    margin-bottom: 40px;
+  h2 {
+    font-size: 2rem;
+    margin-top: 0;
   }
   
-  section h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  section p {
-    font-size: 18px;
+  p {
     line-height: 1.5;
   }
   
-  section img {
+  img {
     max-width: 100%;
     display: block;
-    margin: 20px 0;
+    margin: 2rem auto;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.4);
   }
   
-  /* Footer */
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
   }
+  
+  li {
+    margin: 0;
+  }
+  
+  li a {
+    color: #3d5a3e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+  
+  li a:hover {
+    color: #a8cf88;
+  }
+  
+  /* Footer styles */
+  footer {
+    background-color: #3d5a3e;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+  }
+  
+  footer p {
+    margin: 0;
+    font-size: 1rem;
+  }
+  
   
