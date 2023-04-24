@@ -81,7 +81,7 @@ body {
   .profile-pic {
     float: left;
     width: 200px;
-    margin-right: 20px; /* add some margin to separate the image from the text */
+    margin-right: 200px; /* add some margin to separate the image from the text */
   }
 
   /* adjust the styling for smaller screens */
@@ -103,14 +103,22 @@ body {
   }
   
   li a {
-    color: #3d5a3e;
+    color: #c2e8c3;
     text-decoration: none;
     font-weight: bold;
     font-size: 1.2rem;
   }
+
   
   li a:hover {
-    color: #a8cf88;
+    color: #709651;
+  }
+
+  li b {
+    color: #3d5a3e;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
   }
   
   /* Footer styles */
