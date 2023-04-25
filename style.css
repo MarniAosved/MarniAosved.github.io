@@ -48,6 +48,30 @@ header h2 {
   color: #F1F3EB;
 }
 
+li {
+  margin: 0;
+}
+
+li a {
+  color: #F1F3EB;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+  margin-left: -22px;
+}
+
+
+li a:hover {
+  color: #709651;
+}
+
+li b {
+  color: #3d5a3e;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
