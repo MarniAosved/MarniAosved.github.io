@@ -3,15 +3,15 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.6;
-  color: #F1F3EB;
+  color: #333;
   font-size: 18px;
-  background-color: #333; /* set the background color to a light green */
+  background-color: #F1F3EB; /* set the background color to a light green */
   background-image: url('japanforest.jpg'); /* add a forest background image */
   background-size: cover;
 }
 
 header {
-  background-color: #E4E6D4; /* set the header background color to a darker green */
+  background-color: #333; /* set the header background color to a darker green */
   height: 250px;
   display: flex;
   align-items: center;
@@ -32,18 +32,20 @@ header img {
   height: 120px;
   object-fit: cover;
   margin-right: 30px;
-  border: 5px solid #fff; /* add a white border to the profile picture */
+  border: 5px solid #F1F3EB; 
 }
 
 header h1 {
   font-size: 28px;
   margin-top: 15px;
   margin-bottom: 10px;
+  color: #F1F3EB;
 }
 
 header h2 {
   font-size: 22px;
   margin-top: 0;
+  color: #F1F3EB;
 }
 
 main {
