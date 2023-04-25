@@ -1,0 +1,67 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  font-size: 18px;
+  background-color: #F1F3EB; /* set the background color to a light green */
+  background-image: url('forest-bg.jpg'); /* add a forest background image */
+  background-size: cover;
+}
+
+header {
+  background-color: #E4E6D4; /* set the header background color to a darker green */
+  height: 250px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 0 30px;
+  justify-content: center;
+}
+
+header img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  margin-right: 30px;
+  border: 5px solid #fff; /* add a white border to the profile picture */
+}
+
+.about, .resume, .custom-section {
+  padding: 25px;
+  border: 1px solid #ccc;
+  background-color: #F1F3EB; /* set the section background color to a light green */
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* add a box shadow to the sections */
+}
+
+.about {
+  width: 60%;
+  margin-right: 10px;
+}
+
+.resume {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.custom-section {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  color: #2C2F26; /* set the headings to a dark green color */
+}
+
+a {
+  color: #2C2F26; /* set the links to the same dark green color */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
