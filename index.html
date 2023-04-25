@@ -1,52 +1,139 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-	<link rel="stylesheet" href="style.css">
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Marni Aosved</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marni Aosved</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #333;
+      font-size: 18px;
+    }
+
+    header {
+      background-color: #f5f5f5;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 0 30px;
+      justify-content: center;
+    }
+
+    header .header-content {
+      max-width: 1100px;
+      display: flex;
+      width: 100%;
+    }
+
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      margin-right: 30px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+
+    header h2 {
+      font-size: 22px;
+      margin-top: 0;
+    }
+
+    main {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+      border-left: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+    }
+
+    .about, .resume, .custom-section {
+      padding: 25px;
+      border: 1px solid #ccc;
+      background-color: #f5f5f5;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+
+    .about {
+      width: 60%;
+      margin-right: 10px;
+    }
+
+    .resume {
+      width: 30%;
+      margin-right: 10px;
+    }
+
+    .custom-section {
+      width: 100%;
+    }
+
+    a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .resume-preview {
+      border: 1px solid #ccc;
+      width: 100%;
+      height: 240px;
+      overflow: hidden;
+      position: relative;
+      margin-top: 15px;
+    }
+
+    .resume-preview iframe {
+      position: absolute;
+      top: -80px;
+      left: 0;
+      width: 100%;
+      height: 400px;
+    }
+  </style>
 </head>
-
 <body>
-	<header>
-	<h1>Marni Aosved</h1>
-	<nav>
-		<ul>
-		<li><a href="#about-me">About Me</a></li>
-		<li><a href="#my-projects">My Projects</a></li>
-		<li><a href="#contact-me">Contact Me</a></li>
-		<li><a href="Marni%20Aosved%20Resume.CV.pdf" target="_blank">Resume</a></li>
-		</ul>
-	</nav>
-	</header>
-	
-	<main>
-		<section id="about-me">
-			<h2>About Me</h2>
-			<p>Marni Aosved
-          I am a Chemistry and Data Science double major at Willamette University.
-          I love exploring anything from the outdoors to large data sets to how molecules interact. </p>
-		  	<img src="MarniInTheLab.jpg" alt="A selfie of Marni in a biochemistry lab." class="profile-pic" width="300">
-		</section>
-		<section id="my-projects">
-			<h2>My Projects</h2>
-			<p>Most of the projects I have completed throughout my schooling were private,</p>
-      <p>so I am currently working on hunting them down and getting them avaliable for you to view.</p>
-      <p>Come back in a little bit to look for updates!</p>
-      <p>In the meantime, here are the projects I have avaliable for you to look at</i>:</p>
-      <li><b href="https://github.com/MarniAosved?tab=repositories" target="_blank">Projects</b></li>
-    </ul>
-		</section>
-		<section id="contact-me">
-			<h2>Contact Me</h2>
-			<li><b href="https://www.linkedin.com/in/marni-aosved" target="_blank">LinkedIn</b></li>
-
-		</section>
-	</main>
-	<footer>
-		<p>&copy; 2023 MarniAosved Personal Website</p>
-	</footer>
+  <header>
+    <div class="header-content">
+      <img src=".\picture.jpg" alt="Your Name">
+      <div>
+        <h1>Marni Aosved</h1>
+        <h2>Chemistry BA and Data Science BS</h2>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="about">
+      <h3>About Me</h3>
+      <p>
+        I am a Chemistry and Data Science double major at Willamette University. I love exploring anything from the outdoors to large data sets to how molecules interact. 
+      </p>
+    </section>
+    <section class="resume">
+      <h3>Resume</h3>
+      <p>
+        <a href=".\resume.pdf" target="_blank">Download PDF Resume</a>
+      </p>
+      <div class="resume-preview">
+        <iframe src=".\resume.pdf" frameborder="0"></iframe>
+      </div>
+    </section>
+  </main>
 </body>
-</html>
-

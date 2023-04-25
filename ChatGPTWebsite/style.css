@@ -64,6 +64,11 @@ body {
     font-size: 2rem;
     margin-top: 0;
   }
+
+  h3 {
+    font-size: 1rem;
+    margin-top:0;
+  }
   
   p {
     line-height: 1.5;
