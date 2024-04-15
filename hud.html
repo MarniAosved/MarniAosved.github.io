@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <style>
+   body { background: white; color: black; }
+   p { background: white; color: black; }
+  </style>
+ </head>
+ <body>
+ 
+  <h1>Meta/Facebook and Fair Housing
+<br><br>
+    My thoughts on <a href="https://www.justice.gov/opa/pr/justice-department-secures-groundbreaking-settlement-agreement-meta-platforms-formerly-known">
+        Justice Department vs Meta</a> and <a href="https://www.npr.org/2019/03/28/707614254/hud-slaps-facebook-with-housing-discrimination-charge"> HUD vs Facebook</a> 
+    (in no particular order): </h1>
+  <b></b>
+  <p>
+    <ul>
+    <li>I was not surprised that a company as large as Meta was involved in discriminatory practices. I was, however, surprised at the details of the discrimination and that nobody noticed it sooner.</li>
+    <li>“Lookalike Audience” is clearly a form of discrimination, even the name sounds like it should ring some “possible discrimination” bells in people’s heads. </li>
+    <li>Meta claims that it will stop using the advertising tool, but Meta has not stopped using that tool before so I am doubtful they will this time. </li>
+    <li>The article claims that Meta has to notify the US government if they wish to add targeting options. I am curious if these are only options that are protected or if they can use other options to target people. I know that sometimes one protected class, like location, could be predicted based on other non-protected classes, so I am wondering if Meta will simply make inferences into what these classes are rather than use them directly in their training data. </li>
+    <li>At first, I understood that if housing ads wanted to be shown to people who would use them, so homes for families and apartments for young couples, they would like targeted advertisements to be used. However, that is discrimination. Especially when we get into the territory of excluding people based on their citizenship status, religion, cultural interests, and ZIP code. Once again, it is impossible that nobody thought this could be verging on discrimination. I am curious what happened to the person who recommended the advertising groups take a step back and consider what they were doing.</li>
+    <li>The fact that even in 2016 Facebook was allowing advertisers to decide on what ethnicity to broadcast to is ridiculous. </li>
+    <li>I think it is interesting that as soon as there is money to be made, ethics and good business practices get thrown out of the window.</li>
+    </ul>
+    Overall, I feel that Tech companies really need to think more about how their technology affects real people rather than how effectively it will line their pockets. 
+    <br><br><br>
+    This button is unrelated but you can use it to see when you will own a house.
+    </p>
+
+    <input type="text" id="myIn">
+    <button type="button" onclick="io();">When?</button>
+    <output id="myOut">Whats the result?</output>
+    <script>
+        function io()
+        {
+        let input  = document.getElementById("myIn")  ;
+        let output = document.getElementById("myOut") ;
+        let n = input.value ;
+        output.innerText = primality(n).toString() ;
+        }
+        function primality(n)
+        {
+            let l = ["You won't :( sorry", "Jan. 1, 2084", "ummm how about 2060?", "April 20, 2420", "The heat death of the universe :)"]
+            let odds = Math.random()
+            if (odds > 0.75)
+                {
+                    return l[0];
+                }
+            else if (odds > 0.5)
+                {
+                return l[1];
+                }
+            else if (odds > 0.25)
+                {
+                return l[2];
+                }
+            else if (odds < 0.25)
+                {
+                return l[3];
+                }
+            return l[4]; 
+        }
+    </script>
+
+
+</body>
+</html>
